@@ -85,32 +85,6 @@
       color: #ffd700;
       font-weight: bold;
     }
-    .menu-svg {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 16px auto 0 auto;
-      width: 64px;
-      height: 48px;
-    }
-    .menu-svg svg {
-      width: 48px;
-      height: 48px;
-      display: block;
-    }
-    .qr-svg {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 12px auto;
-      width: 80px;
-      height: 80px;
-    }
-    .qr-svg svg {
-      width: 80px;
-      height: 80px;
-      display: block;
-    }
     .sub-section {
       margin-top: 10px;
       background: #191919;
@@ -140,7 +114,7 @@
     }
     .menu-img-img {
       width: 100%;
-      height: 150px; /* Adjust as needed */
+      height: 150px;
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 12px;
@@ -164,22 +138,6 @@
         width: 40px;
         height: 40px;
       }
-      .menu-svg {
-        width: 48px;
-        height: 36px;
-      }
-      .menu-svg svg {
-        width: 36px;
-        height: 36px;
-      }
-      .qr-svg {
-        width: 60px;
-        height: 60px;
-      }
-      .qr-svg svg {
-        width: 60px;
-        height: 60px;
-      }
     }
     @media (max-width: 600px) {
       .menu-header h1 {
@@ -196,21 +154,8 @@
         width: 32px;
         height: 32px;
       }
-      .menu-svg {
-        width: 36px;
-        height: 24px;
-      }
-      .menu-svg svg {
-        width: 24px;
-        height: 24px;
-      }
-      .qr-svg {
-        width: 40px;
-        height: 40px;
-      }
-      .qr-svg svg {
-        width: 40px;
-        height: 40px;
+      .menu-img-img {
+        height: 90px;
       }
     }
   </style>
@@ -231,7 +176,7 @@
     </header>
     <main class="menu-main">
       <section class="menu-section wings">
-        <img class="Grilled-Chicken-Wings_Featured.jpg" alt="أجنحة الدجاج" src="Grilled-Chicken-Wings_Featured.jpg" />
+        <img class="menu-img-img" alt="أجنحة الدجاج" src="Grilled-Chicken-Wings_Featured.jpg" />
         <h2>أجنحة الدجاج</h2>
         <ul>
           <li>6 قطع <span>5,000 دينار</span></li>
@@ -240,6 +185,7 @@
         </ul>
       </section>
       <section class="menu-section shawarma">
+        <img class="menu-img-img" alt="شاورما" src="burger.jpg" />
         <h2>شاورما</h2>
         <ul>
           <li>لفة دجاج <span>1,500 دينار</span></li>
@@ -247,16 +193,9 @@
           <li>صحن دجاج و رز <span>5,000 دينار</span></li>
           <li>صحن لحم و رز <span>6,000 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Shawarma">
-          <!-- Shawarma skewer SVG -->
-       <img class="pasta.jpg" alt=" شاورمە" src="Grilled-Chicken-Wings_Featured.jpg" />
-            <rect x="20" y="8" width="8" height="28" rx="4" fill="#ffd700"/>
-            <rect x="22" y="36" width="4" height="8" rx="2" fill="#fff"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section eastern">
-        <img class="pizza.jpg" alt="ماكولات شرقية" src="data:image/jpeg;base64,[BASE64-dominican-food-hero.jpg]" />
+        <img class="menu-img-img" alt="ماكولات شرقية" src="dominican-food-hero.jpg" />
         <h2>ماكولات شرقية</h2>
         <ul>
           <li>وجبة دولمة + لحم <span>7,000 دينار</span></li>
@@ -264,7 +203,7 @@
           <li>نصف وجبة دولمة <span>3,000 دينار</span></li>
         </ul>
         <div class="sub-section">
-          <img class="menu-img-img" alt="كبة" src="data:image/png;base64,[BASE64-Screenshot 2025-07-10 234508.png]" />
+          <img class="menu-img-img" alt="كبة" src="Screenshot 2025-07-10 234508.png" />
           <h3>كبة</h3>
           <ul>
             <li>كبة مقلية <span>5,000 دينار</span></li>
@@ -272,35 +211,21 @@
           </ul>
         </div>
         <div class="sub-section">
-          <img class="menu-img-img" alt="Random" src="data:image/jpeg;base64,[BASE64-R (1).jfif]" />
+          <img class="menu-img-img" alt="صحن سمك مشوي" src="R (1).jfif" />
           <h3>صحن سمك مشوي</h3>
           <span>8,000 دينار</span>
         </div>
-        <span class="menu-svg" aria-label="Eastern Food">
-          <!-- Plate SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="24" cy="36" rx="16" ry="6" fill="#fff"/>
-            <ellipse cx="24" cy="36" rx="10" ry="3" fill="#ffd700"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section steak">
-        <img class="R.jfif" alt="Random" src="data:image/jpeg;base64,[BASE64-R.jfif]" />
+        <img class="menu-img-img" alt="ستيك" src="R.jfif" />
         <h2>ستيك</h2>
         <ul>
           <li>دجاج مشوي <span>7,000 دينار</span></li>
           <li>ستيك لحم <span>8,000 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Steak">
-          <!-- Steak SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="24" cy="32" rx="14" ry="8" fill="#ffd700"/>
-            <ellipse cx="24" cy="32" rx="8" ry="4" fill="#fff"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section drinks">
-        <img class="Screenshot 2025-07-10 234508.png" alt="Random" src="data:image/jpeg;base64,[BASE64-easy-dinner]" />
+        <img class="menu-img-img" alt="مشروبات" src="easy-dinner" />
         <h2>مشروبات</h2>
         <ul>
           <li>بيبسي <span>500 دينار</span></li>
@@ -308,15 +233,9 @@
           <li>سفن <span>500 دينار</span></li>
           <li>شاي <span>500 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Drinks">
-          <!-- Soda can SVG -->
-          <svg width="32" height="48" viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="6" y="8" width="20" height="32" rx="6" fill="#fff"/>
-            <rect x="10" y="4" width="12" height="6" rx="3" fill="#ffd700"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section pizza">
+        <img class="menu-img-img" alt="بيتزا" src="pizza.jpg" />
         <h2>بيتزا</h2>
         <ul>
           <li>بيبروني صغير <span>6,000 دينار</span> وسط <span>8,000 دينار</span> كبير <span>12,000 دينار</span></li>
@@ -325,17 +244,9 @@
           <li>خضروات صغير <span>5,000 دينار</span> وسط <span>7,000 دينار</span> كبير <span>10,000 دينار</span></li>
           <li>مارغريتا صغير <span>5,000 دينار</span> وسط <span>7,000 دينار</span> كبير <span>10,000 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Pizza">
-          <!-- Pizza slice SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 8 L44 40 L4 40 Z" fill="#ffd700"/>
-            <circle cx="24" cy="28" r="3" fill="#fff"/>
-            <circle cx="18" cy="36" r="2" fill="#fff"/>
-            <circle cx="30" cy="36" r="2" fill="#fff"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section burger">
+        <img class="menu-img-img" alt="همبركر" src="armando-ascorve-morales-cr81IE_r894-unsplash.jpg" />
         <h2>همبركر</h2>
         <ul>
           <li>لحم <span>5,500 دينار</span></li>
@@ -343,25 +254,20 @@
           <li>لفة دجاج زنجر <span>5,000 دينار</span></li>
         </ul>
         <div class="sub-section">
+          <img class="menu-img-img" alt="وجبة أوفكيل" src="Grilled-Chicken-Wings_Featured.jpg" />
           <h3>وجبة أوفكيل</h3>
           <p>شاورمة دجاج، شاورمة لحم، فينكر بطاطه، بيتزا و اثنين Pepsi</p>
           <span>10,000 دينار</span>
         </div>
         <div class="sub-section">
+          <img class="menu-img-img" alt="وجبة أوفكيل عائلي" src="burger.jpg" />
           <h3>وجبة أوفكيل عائلي</h3>
           <p>2 شاورما دجاج، 2 شاورما لحم، بيتزا وسط، فينكر بطاطه وسط، 4 Pepsi</p>
           <span>20,000 دينار</span>
         </div>
-        <span class="menu-svg" aria-label="Burger">
-          <!-- Burger SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="24" cy="32" rx="14" ry="6" fill="#ffd700"/>
-            <ellipse cx="24" cy="26" rx="14" ry="6" fill="#fff"/>
-            <ellipse cx="24" cy="20" rx="14" ry="6" fill="#ffd700"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section combo">
+        <img class="menu-img-img" alt="كومبو" src="dominican-food-hero.jpg" />
         <h2>كومبو</h2>
         <ul>
           <li>همبركر لحم <span>7,000 دينار</span></li>
@@ -369,16 +275,9 @@
           <li>شاورما دجاج <span>7,000 دينار</span></li>
           <li>وجبة أطفال <span>5,000 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Combo">
-          <!-- Burger and fries SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="16" cy="36" rx="8" ry="4" fill="#ffd700"/>
-            <rect x="28" y="32" width="10" height="8" rx="2" fill="#fff"/>
-            <rect x="30" y="28" width="6" height="6" rx="1" fill="#ffd700"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section rice">
+        <img class="menu-img-img" alt="رز - فاصوليا" src="Screenshot 2025-07-10 234508.png" />
         <h2>رز - فاصوليا</h2>
         <ul>
           <li>قلبية، أرز، فاصوليا <span>7,000 دينار</span></li>
@@ -386,15 +285,9 @@
           <li>برياني، فاصوليا - دجاج <span>7,000 دينار</span></li>
           <li>باستا <span>7,000 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Rice">
-          <!-- Rice bowl SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="24" cy="36" rx="14" ry="6" fill="#fff"/>
-            <ellipse cx="24" cy="34" rx="10" ry="3" fill="#ffd700"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section finger">
+        <img class="menu-img-img" alt="فينكر" src="R (1).jfif" />
         <h2>فينكر</h2>
         <ul>
           <li>فينكر صغيرة <span>1,000 دينار</span></li>
@@ -404,56 +297,28 @@
           <li>فينكر حامض <span>5,000 دينار</span></li>
           <li>صحن فينكر بطاطه <span>5,000 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Finger Food">
-          <!-- Drumstick SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="32" cy="32" rx="10" ry="6" fill="#ffd700"/>
-            <ellipse cx="18" cy="38" rx="6" ry="3" fill="#fff"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section rice-laziz">
+        <img class="menu-img-img" alt="ريزو - لازيز" src="R.jfif" />
         <h2>ريزو - لازيز</h2>
         <ul>
           <li>ريزو <span>5,000 دينار</span></li>
           <li>صحن لازيز <span>5,000 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Rizo">
-          <!-- Rice bowl SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="24" cy="36" rx="14" ry="6" fill="#fff"/>
-            <ellipse cx="24" cy="34" rx="10" ry="3" fill="#ffd700"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section fish">
+        <img class="menu-img-img" alt="سمك تونة" src="easy-dinner" />
         <h2>سمك تونة</h2>
         <ul>
           <li>صغير <span>6,000 دينار</span></li>
           <li>وسط <span>8,000 دينار</span></li>
           <li>كبير <span>12,000 دينار</span></li>
         </ul>
-        <span class="menu-svg" aria-label="Fish">
-          <!-- Fish SVG -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="28" cy="32" rx="12" ry="6" fill="#ffd700"/>
-            <polygon points="12,32 20,28 20,36" fill="#fff"/>
-          </svg>
-        </span>
       </section>
       <section class="menu-section contact">
+        <img class="menu-img-img" alt="تواصل" src="armando-ascorve-morales-cr81IE_r894-unsplash.jpg" />
         <h2>تواصل</h2>
         <div class="contact-info">
-          <span class="qr-svg" aria-label="QR Code">
-            <!-- Simple QR SVG -->
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8" y="8" width="16" height="16" fill="#fff"/>
-              <rect x="56" y="8" width="16" height="16" fill="#fff"/>
-              <rect x="8" y="56" width="16" height="16" fill="#fff"/>
-              <rect x="32" y="32" width="8" height="8" fill="#ffd700"/>
-              <rect x="48" y="48" width="8" height="8" fill="#ffd700"/>
-            </svg>
-          </span>
           <p>0750 022 2112 - 0773 698 2112</p>
           <p>بارك تاور (sh-18)</p>
         </div>
